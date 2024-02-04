@@ -1,0 +1,172 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li{
+   list-style: none;
+   margin: 0 5px;
+   
+}
+
+nav ul li a{
+   text-decoration: none;
+   font-size: large;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-top: 10%;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  margin-bottom: 23px;
+}
+
+
+
+.search-box {
+  display: flex;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 575px;
+  max-width: 80%
+  
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  
+}
+
+.search-button {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.down-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-search{
+  display: flex;
+  margin-left: 13px;
+  padding: 3px;
+  margin: 0px 30px;
+  color: black;
+  background-color: azure;
+  cursor: pointer;
+}
+
+.i-feel{
+  display: flex;
+  margin-left: 13px;
+  padding: 3px;
+  margin: 0px 30px;
+  color: black;
+  background-color: azure;
+  cursor: pointer;
+}
+
+.google-offer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23px;
+}
+
+.google-offer p{
+  font-weight: bold;
+  align-items: center;
+}
+
+footer{
+  margin-top: auto;
+  background-color: #ccc;
+}
+
+.row2 ul{
+  display: flex;
+  height: 50px;
+  align-items: center;
+  list-style: none;
+}
+
+.row2 ul li a{
+  text-decoration: none;
+  margin: 0 13px;
+}
+
+.row1 {
+  height:50px;
+  color: rgb(0, 0, 0);
+  display: flex;
+}
+
+.row1 p{
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+@media (min-width : 310px) and (max-width : 1200px){
+  .logo{
+    width: 70%;
+    margin-top: 38%;
+  }
+  .search-container{
+    width: 95%;
+    justify-content: center;
+    align-content: center;
+    margin-left: 14px;
+  }
+  .google-search{
+    margin: 0px 10px;
+  }
+  .i-feel{
+    margin: 0px 10px;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  .search-box {
+      width: 100%;
+  }
+}
